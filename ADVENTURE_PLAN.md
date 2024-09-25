@@ -6,7 +6,7 @@ PROMPT 1: red
 PROMPT 2: blue
 
 2A 
-SELECTION: [Blue] Pill
+SELECTION: Blue Pill
 TEXT: Welcome to the matrix
 PROMPT 1: Join the Resistance 
 PROMPT 2: Join the Robots

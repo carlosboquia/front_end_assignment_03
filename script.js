@@ -4,11 +4,44 @@ function renderQuestion() {
     const questionContainer = document.getElementById("question");
     const answersContainer = document.getElementById("answers");
 
-    questionContainer.textContent = currentState.question;
+
+    switch (currentState) {
+        case "start":
+            break;
+        case "redpill":
+            break;
+        case "bluepill":
+            break;
+        case "resistance":
+            break;
+        case "robots":
+            break;
+        case "fight":
+            break;
+        case "stay":
+            break;
+        case "loud":
+            break;
+        case "quiet":
+            break;
+        case "loudheadrobot":
+            break;
+        case "loudminions":
+            break;
+        case "quietmainframe":
+            break;
+        case "quietengineerbrain":
+            break;
+        case "end":
+            break;
+    }
+
+
+    questionContainer.textContent = story[currentState].question;
     answersContainer.textContent = "";
     
-    for (let i = 0; i < currentState.choice.length; i++) {
-        const choice = currentState.choice[i];
+    for (let i = 0; i < story[currentState].choice.length; i++) {
+        const choice = story[currentState].choice[i];
         const button = addAnswerButton(choice);
         answersContainer.appendChild(button);
     }
@@ -136,4 +169,4 @@ const story = {
     },
 
 }
-
+renderQuestion();

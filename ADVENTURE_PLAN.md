@@ -28,10 +28,10 @@ TEXT: Enjoy Paradise
 PROMPT: Restart Game go back to 1
 
 4A
-SELECTION: If arm up to fight
+SELECTION: fight
 TEXT: Go into battle! How would you like to proceed?
 PROMPT 1: Go in loud
-PROMPT 2: go in quiet
+PROMPT 2: Go in quiet
 
 4B
 SELECTION: Stay within the community
@@ -57,7 +57,7 @@ PROMPT: Restart Game go back to 1
 
 6B:
 SELECTION: Robot Minions (LOUD)
-TEXT: The minions aree too strong for our forces. They have overun us.
+TEXT: The minions are too strong for our forces. They have overun us.
 PROMPT: restart game go back to 1
 
 7A: 
@@ -67,7 +67,7 @@ PROMPT: restart game go back to 1
 
 7B:
 SELECTION: Engineers Brain (QUIET)
-TEXT: You made it to the brain! Disable the brain and win for resistance
+TEXT: You made it to the brain! Disable the brain and win for the resistance!
 PROMPT: HACK THE BRAIN!
 
 8: (FINAL)

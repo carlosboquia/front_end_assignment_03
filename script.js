@@ -7,33 +7,50 @@ function renderQuestion() {
 
     switch (currentState) {
         case "start":
+            console.log("game start")
             break;
         case "redpill":
+            console.log("red pill - Game Over")
             break;
         case "bluepill":
+            console.log("blue pill")
             break;
         case "resistance":
+            console.log("Resistance")
             break;
         case "robots":
+            console.log("Robots - Game Over")
             break;
         case "fight":
+            console.log("Fight")
             break;
         case "stay":
+            console.log("Stay - Game Over")
             break;
         case "loud":
+            console.log("Loud")
             break;
         case "quiet":
+            console.log("Quiet")
             break;
         case "loudheadrobot":
+            console.log("Head Robot - Game Over")
             break;
         case "loudminions":
+            console.log("Robot Minions - Game Over")
             break;
         case "quietmainframe":
+            console.log("Main Frame - Game Over")
             break;
         case "quietengineerbrain":
+            console.log("Engineer Brain")
             break;
         case "end":
+            console.log("Player wins game!")
             break;
+        default:
+            text ="Game error"
+            console.log("Game Error restart page")
     }
 
 
@@ -67,7 +84,7 @@ const story = {
         question:"Choose your destiny",
         choice: [
             { text: "Red Pill", nextState: "redpill"},
-            { text: "Blue Pill", nextState: "bluepill"}
+            { text: "Blue Pill", nextState: "bluepill"},
         ]
     },
 
@@ -75,11 +92,12 @@ const story = {
         question:"Enjoy paradise",
         choice: [
             { text: "Restart Game", nextState: "start"},
+            
         ]
     },
 
     bluepill: {
-        question:"Welcome to the Matrix",
+        question:"Choose your Faction",
         choice: [
             { text: "Join the Resistance", nextState: "resistance"},
             { text: "Join the Robots", nextState: "robots"},
@@ -91,6 +109,7 @@ const story = {
         choice: [
             { text: "Arm up to fight!", nextState: "fight"},
             { text: "Stay within the community", nextState: "stay"},
+            
         ]
     },
 

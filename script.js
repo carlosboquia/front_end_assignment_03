@@ -11,46 +11,32 @@ function renderQuestion() {
     // The multiple choices within the game based off the const Story variable
     switch (currentState) {
         case "start":
-            console.log("game start")
             break;
         case "redpill":
-            console.log("red pill - Game Over")
             break;
         case "bluepill":
-            console.log("blue pill")
             break;
         case "resistance":
-            console.log("Resistance")
             break;
         case "robots":
-            console.log("Robots - Game Over")
             break;
         case "fight":
-            console.log("Fight")
             break;
         case "stay":
-            console.log("Stay - Game Over")
             break;
         case "loud":
-            console.log("Loud")
             break;
         case "quiet":
-            console.log("Quiet")
             break;
         case "loudheadrobot":
-            console.log("Head Robot - Game Over")
             break;
         case "loudminions":
-            console.log("Robot Minions - Game Over")
             break;
         case "quietmainframe":
-            console.log("Main Frame - Game Over")
             break;
         case "quietengineerbrain":
-            console.log("Engineer Brain")
             break;
         case "end":
-            console.log("Player wins game!")
             break;
         default:
             text ="Game error"
@@ -94,6 +80,7 @@ const story = {
             { text: "Red Pill", nextState: "redpill"},
             { text: "Blue Pill", nextState: "bluepill"},
         ]
+        
     },
     redpill: {
         question:"Enjoy your paradise. GAME OVER",
